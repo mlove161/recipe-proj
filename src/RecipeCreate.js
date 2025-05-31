@@ -28,7 +28,7 @@ function RecipeCreate() {
     setFormData({...initialFormState});
   };
 
-  
+  // TODO: have submissions get added to current recipe list
   return (
     <form name="create" onSubmit={handleSubmit}>
       <table>
