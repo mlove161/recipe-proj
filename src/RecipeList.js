@@ -1,8 +1,6 @@
 import React from "react";
-import RecipeCreate from "./RecipeCreate";
 
-
-function RecipeList({recipeList}) {
+function RecipeList({recipeList, createRecipe}) {
   
   // TODO: Display the list of recipes using the structure of table that is provided.
   // TODO: Create at least one additional component that is used by this component.
@@ -35,14 +33,14 @@ function RecipeList({recipeList}) {
           ))}
          <tr>
           <td> test</td>
-          <RecipeCreate />
          </tr>
-         
         </tbody>
       </table>
-        <RecipeCreate />
-
+       
+        
     </div>
   )
 }
+
+// add list to recipecreate
 export default RecipeList;

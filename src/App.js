@@ -7,15 +7,24 @@ import RecipeData from "./RecipeData"
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
 
+  const createRecipe = (newRecipe) => {
+  console.log("adding new recipe", newRecipe);
+   setRecipes((currentRecipes) => [
+    newRecipe, ...currentRecipes
+   ]); 
+   
+  }
+  console.log("recipes ", recipes);
   // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
   // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
-
+  
+  // add recipe to list
   
   return (
     <div className="App">
       <header><h1>Delicious Food Recipes</h1></header>
       <RecipeList recipeList={recipes}/>
-      
+      <RecipeCreate createRecipe={createRecipe}/>
     </div>
   );
 }
