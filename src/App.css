@@ -9,6 +9,16 @@ label {
   width: 100px;
 }
 
+h1 {
+  font-family: 'Playfair Display SC';
+  text-align: center;
+  font-size: 64;
+}
+
+td {
+  text-align: center;
+}
+
 header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }

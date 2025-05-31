@@ -1,4 +1,6 @@
 import React from "react";
+import RecipeCreate from "./RecipeCreate";
+
 
 function RecipeList() {
   
@@ -11,16 +13,26 @@ function RecipeList() {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th>Name</th>
+            <th>Cuisine</th>
+            <th>Photo</th>
+            <th>Ingredients</th>
+            <th>Preparation</th>
             <th>Actions</th>
+            
           </tr>
         </thead>
         <tbody>
-        
+         <tr>
+          <td> test</td>
+          <RecipeCreate />
+         </tr>
+         
         </tbody>
       </table>
-    </div>
-  );
-}
+        <RecipeCreate />
 
+    </div>
+  )
+}
 export default RecipeList;
