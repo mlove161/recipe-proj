@@ -25,18 +25,15 @@ function RecipeList({recipeList, deleteRecipe}) {
             <tr key={index}>
               <td>{name}</td>
               <td>{cuisine}</td>
-              <td>{photo}</td>
-              <td>{ingredients}</td>
+              <td><img src={photo} /></td>
+              <td className="content_td"><p>{ingredients}</p></td>
               <td>{preparation}</td>
-              <td>{actions}</td>
               <td>
-                <button type="submit" onClick={() =>deleteRecipe(index)}>Delete</button>
+                <button type="submit" name="delete" onClick={() =>deleteRecipe(index)}>Delete</button>
               </td>
             </tr>
           ))}
-         <tr>
-          <td> test</td>
-         </tr>
+         
         </tbody>
       </table>
        

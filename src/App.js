@@ -8,13 +8,11 @@ function App() {
   const [recipes, setRecipes] = useState(RecipeData);
 
   const createRecipe = (newRecipe) => {
-  console.log("adding new recipe", newRecipe);
    setRecipes((currentRecipes) => [
-    newRecipe, ...currentRecipes
+    ...currentRecipes, newRecipe
    ]); 
    
   }
-  console.log("recipes ", recipes);
 
   const deleteRecipe = (indexToDelete) => {
     setRecipes((currentRecipes) => currentRecipes.filter((recipe, index) => index != indexToDelete))
